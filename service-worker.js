@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "weatherapp/precache-manifest.2ba428316572704033695998ad61e52e.js"
+  "/precache-manifest.2ba428316572704033695998ad61e52e.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "weather-app"});
+workbox.core.setCacheNameDetails({prefix: "weatherapp"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
